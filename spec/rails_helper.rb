@@ -64,3 +64,10 @@ RSpec.configure do |config|
   # Default ActiveJob to use test queue adapter for all tests
   ActiveJob::Base.queue_adapter = :test
 end
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
+end

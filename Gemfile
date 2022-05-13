@@ -39,6 +39,10 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "rspec-rails", "~> 6.0.0.rc1", ">=6.0.0.rc1"
+  gem 'shoulda-matchers', '~> 5.1'
+  gem 'factory_bot_rails', '~> 6.2'
+  gem 'timecop', '~> 0.9.5'
+  gem 'faker', '~> 2.20'
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 
