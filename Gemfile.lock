@@ -166,6 +166,7 @@ GEM
       rspec-mocks (~> 3.11)
       rspec-support (~> 3.11)
     rspec-support (3.11.0)
+    rufo (0.13.0)
     strscan (3.0.3)
     thor (1.2.1)
     timeout (0.2.0)
@@ -187,6 +188,7 @@ DEPENDENCIES
   rack-cors (~> 1.1, >= 1.1.1)
   rails (~> 7.0.3)
   rspec-rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
+  rufo
   tzinfo-data
 
 RUBY VERSION
