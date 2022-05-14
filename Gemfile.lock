@@ -69,6 +69,7 @@ GEM
     annotate (3.2.0)
       activerecord (>= 3.2, < 8.0)
       rake (>= 10.4, < 14.0)
+    bcrypt (3.1.17)
     bootsnap (1.11.1)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -94,6 +95,7 @@ GEM
     io-console (0.5.11)
     irb (1.4.1)
       reline (>= 0.3.0)
+    jwt (2.3.0)
     loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -198,10 +200,12 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (~> 3.2)
+  bcrypt (~> 3.1.7)
   bootsnap
   debug
   factory_bot_rails (~> 6.2)
   faker (~> 2.20)
+  jwt (~> 2.3)
   pg (~> 1.1)
   puma (~> 5.0)
   rack-cors (~> 1.1, >= 1.1.1)
