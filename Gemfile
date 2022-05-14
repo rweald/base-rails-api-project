@@ -27,10 +27,10 @@ gem "rack-cors", "~> 1.1", ">= 1.1.1"
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # And JWTs for API authentication
 gem "bcrypt", "~> 3.1.7"
-gem 'jwt', '~> 2.3'
+gem "jwt", "~> 2.3"
 
 # RestClient for making external HTTP calls in an easy to use fashion
-gem 'rest-client', '~> 2.1'
+gem "rest-client", "~> 2.1"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
@@ -44,10 +44,10 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "rspec-rails", "~> 6.0.0.rc1", ">=6.0.0.rc1"
-  gem 'shoulda-matchers', '~> 5.1'
-  gem 'factory_bot_rails', '~> 6.2'
-  gem 'timecop', '~> 0.9.5'
-  gem 'faker', '~> 2.20'
+  gem "shoulda-matchers", "~> 5.1"
+  gem "factory_bot_rails", "~> 6.2"
+  gem "timecop", "~> 0.9.5"
+  gem "faker", "~> 2.20"
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 
@@ -55,9 +55,8 @@ group :development do
   # ----------------------------------------------------------------------------------------------------------------------------------------
   # Use spring to speed up commands on slow machines
   # ----------------------------------------------------------------------------------------------------------------------------------------
-  gem 'spring', '~> 4.0'
-  gem 'spring-commands-rspec', '~> 1.0', '>= 1.0.4'
-
+  gem "spring", "~> 4.0"
+  gem "spring-commands-rspec", "~> 1.0", ">= 1.0.4"
 
   # ----------------------------------------------------------------------------------------------------------------------------------------
   # code formatting using Rufo
@@ -67,10 +66,10 @@ group :development do
   # ----------------------------------------------------------------------------------------------------------------------------------------
   # DB schema definitions on top of model files
   # ----------------------------------------------------------------------------------------------------------------------------------------
-  gem 'annotate', '~> 3.2'
+  gem "annotate", "~> 3.2"
 
   # ----------------------------------------------------------------------------------------------------------------------------------------
   # Security auditing tooling
   # ----------------------------------------------------------------------------------------------------------------------------------------
-  gem 'bundler-audit', '~> 0.9.0.1'
+  gem "bundler-audit", "~> 0.9.0.1"
 end
