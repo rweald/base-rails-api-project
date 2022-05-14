@@ -29,7 +29,15 @@ begin
 rescue ActiveRecord::PendingMigrationError => e
   abort e.to_s.strip
 end
+
+# Manually require all spec support files so they can be used in config step
+Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
+
 RSpec.configure do |config|
+  # Include custom json helpers in all request and controller specs
+  config.include JsonRequestHelpers, type: :request
+  config.include JsonRequestHelpers, type: :controller
+
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
